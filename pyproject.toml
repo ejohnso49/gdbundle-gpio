@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "gdbundle-gpio"
+version = "0.0.1"
+description = ""
+authors = ["Eric Johnson <eric@memfault.com>"]
+readme = "README.md"
+include = ["gdbundle_gpio/scripts/*"]
+license = "MIT"
+classifiers = [
+    "Development Status :: 2 - Pre-Alpha",
+    "Environment :: Plugins",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3.8",
+    "Topic :: Software Development :: Debuggers",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
+
+[tool.poetry.dependencies]
+python = "*"
+gdbundle = "~0.0.3"
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
